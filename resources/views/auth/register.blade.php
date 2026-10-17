@@ -17,21 +17,21 @@
             <div style="display: flex; flex-direction: column; gap:5px">
                 <label for="phone">Телефон</label>
                 <input class="input" id="phone" name="phone" type="tel" placeholder="+79999999999">
-                @error('register')
+                @error('phone')
                     <div>{{ $message }}</div>
                 @enderror
             </div>
             <div style="display: flex; flex-direction: column; gap:5px">
                 <label for="email">Емейл</label>
                 <input class="input" id="email" name="email" type="email">
-                @error('register')
+                @error('email')
                     <div>{{ $message }}</div>
                 @enderror
             </div>
             <div style="display: flex; flex-direction: column; gap:5px">
                 <label for="register">Логин</label>
-                <input class="input" id="register" name="register" type="text">
-                @error('register')
+                <input class="input" id="login" name="login" type="text">
+                @error('login')
                     <div>{{ $message }}</div>
                 @enderror
             </div>
